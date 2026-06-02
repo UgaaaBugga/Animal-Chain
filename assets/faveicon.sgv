@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+<title>Animalchain Favicon</title>
+<rect x="0" y="0" width="680" height="680" rx="120" fill="#07101f"/>
+<rect x="0" y="0" width="680" height="680" rx="120" fill="#6ee7b7" opacity="0.06"/>
+<circle cx="340" cy="340" r="220" fill="none" stroke="#7dd3fc" stroke-width="6" stroke-dasharray="30 25" opacity="0.4"/>
+<g transform="translate(340 130)">
+<polygon points="-44,-15 -28,-50 -10,-12" fill="#ea580c"/>
+<polygon points="44,-15 28,-50 10,-12" fill="#ea580c"/>
+<polygon points="-36,-15 -28,-40 -16,-15" fill="#fde68a"/>
+<polygon points="36,-15 28,-40 16,-15" fill="#fde68a"/>
+<circle r="48" fill="#ea580c"/>
+<path d="M -28 5 Q -10 12 0 8 Q 10 12 28 5 Q 22 32 0 40 Q -22 32 -28 5 Z" fill="#fde68a"/>
+<circle cx="-15" cy="-3" r="6" fill="#07101f"/>
+<circle cx="15" cy="-3" r="6" fill="#07101f"/>
+<circle cx="-13" cy="-5" r="2" fill="#f8fafc"/>
+<circle cx="17" cy="-5" r="2" fill="#f8fafc"/>
+<ellipse cx="0" cy="18" rx="6" ry="5" fill="#07101f"/>
+<path d="M 0 23 Q 0 32 -6 34" stroke="#07101f" stroke-width="2" fill="none"/>
+<path d="M 0 23 Q 0 32 6 34" stroke="#07101f" stroke-width="2" fill="none"/>
+</g>
+<g transform="translate(540 270)">
+<circle cx="-42" cy="-32" r="20" fill="#92400e"/>
+<circle cx="-55" cy="0" r="20" fill="#92400e"/>
+<circle cx="-42" cy="32" r="20" fill="#92400e"/>
+<circle cx="-20" cy="48" r="20" fill="#92400e"/>
+<circle cx="20" cy="48" r="20" fill="#92400e"/>
+<circle cx="42" cy="32" r="20" fill="#92400e"/>
+<circle cx="55" cy="0" r="20" fill="#92400e"/>
+<circle cx="42" cy="-32" r="20" fill="#92400e"/>
+<circle cx="20" cy="-48" r="20" fill="#92400e"/>
+<circle cx="-20" cy="-48" r="20" fill="#92400e"/>
+<circle r="40" fill="#fbbf24"/>
+<ellipse cx="0" cy="12" rx="22" ry="16" fill="#fef3c7"/>
+<circle cx="-13" cy="-5" r="8" fill="#f8fafc"/>
+<circle cx="13" cy="-5" r="8" fill="#f8fafc"/>
+<circle cx="-12" cy="-4" r="5" fill="#07101f"/>
+<circle cx="14" cy="-4" r="5" fill="#07101f"/>
+<circle cx="-10" cy="-6" r="2" fill="#f8fafc"/>
+<circle cx="16" cy="-6" r="2" fill="#f8fafc"/>
+<ellipse cx="0" cy="7" rx="6" ry="5" fill="#07101f"/>
+<path d="M 0 12 Q -7 20 -10 18" stroke="#07101f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M 0 12 Q 7 20 10 18" stroke="#07101f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</g>
+<g transform="translate(465 510)">
+<ellipse cx="-32" cy="2" rx="18" ry="32" fill="#0284c7" transform="rotate(-18 -32 2)"/>
+<ellipse cx="32" cy="2" rx="18" ry="32" fill="#0284c7" transform="rotate(18 32 2)"/>
+<ellipse cx="-32" cy="2" rx="9" ry="20" fill="#7dd3fc" transform="rotate(-18 -32 2)"/>
+<ellipse cx="32" cy="2" rx="9" ry="20" fill="#7dd3fc" transform="rotate(18 32 2)"/>
+<circle r="46" fill="#7dd3fc"/>
+<ellipse cx="0" cy="18" rx="26" ry="22" fill="#f0f9ff"/>
+<circle cx="-14" cy="-3" r="6" fill="#07101f"/>
+<circle cx="14" cy="-3" r="6" fill="#07101f"/>
+<circle cx="-12" cy="-5" r="2" fill="#f8fafc"/>
+<circle cx="16" cy="-5" r="2" fill="#f8fafc"/>
+<ellipse cx="0" cy="12" rx="8" ry="6" fill="#07101f"/>
+<path d="M 0 18 Q 0 26 -6 28" stroke="#07101f" stroke-width="2" fill="none"/>
+<path d="M 0 18 Q 0 26 6 28" stroke="#07101f" stroke-width="2" fill="none"/>
+<ellipse cx="0" cy="32" rx="4" ry="2" fill="#fb7185"/>
+</g>
+<g transform="translate(215 510)">
+<circle cx="-32" cy="-28" r="18" fill="#92400e"/>
+<circle cx="32" cy="-28" r="18" fill="#92400e"/>
+<circle cx="-32" cy="-28" r="10" fill="#fbbf24"/>
+<circle cx="32" cy="-28" r="10" fill="#fbbf24"/>
+<circle r="48" fill="#92400e"/>
+<ellipse cx="0" cy="15" rx="26" ry="22" fill="#fde68a"/>
+<circle cx="-15" cy="-5" r="6" fill="#07101f"/>
+<circle cx="15" cy="-5" r="6" fill="#07101f"/>
+<circle cx="-13" cy="-7" r="2" fill="#f8fafc"/>
+<circle cx="17" cy="-7" r="2" fill="#f8fafc"/>
+<ellipse cx="0" cy="8" rx="8" ry="6" fill="#07101f"/>
+<path d="M 0 14 Q 0 22 -5 24" stroke="#07101f" stroke-width="2" fill="none"/>
+<path d="M 0 14 Q 0 22 5 24" stroke="#07101f" stroke-width="2" fill="none"/>
+</g>
+<g transform="translate(140 270)">
+<polygon points="-38,-45 -48,-12 -22,-25" fill="#6d28d9"/>
+<polygon points="38,-45 48,-12 22,-25" fill="#6d28d9"/>
+<polygon points="-34,-38 -40,-18 -26,-25" fill="#a78bfa"/>
+<polygon points="34,-38 40,-18 26,-25" fill="#a78bfa"/>
+<ellipse rx="50" ry="52" fill="#6d28d9"/>
+<ellipse cy="10" rx="38" ry="40" fill="#a78bfa"/>
+<circle cx="-20" cy="-8" r="18" fill="#fde68a"/>
+<circle cx="20" cy="-8" r="18" fill="#fde68a"/>
+<circle cx="-20" cy="-8" r="11" fill="#07101f"/>
+<circle cx="20" cy="-8" r="11" fill="#07101f"/>
+<circle cx="-17" cy="-11" r="3" fill="#f8fafc"/>
+<circle cx="23" cy="-11" r="3" fill="#f8fafc"/>
+<polygon points="-7,12 0,24 7,12 0,8" fill="#fbbf24"/>
+</g>
+<circle cx="340" cy="340" r="92" fill="#f8fafc"/>
+<text x="340" y="395" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="125" fill="#07101f">A</text>
+</svg>

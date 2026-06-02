@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Animalchain · Online</title>
+</head>
+<body data-page="online">
+  <div class="shell">
+    <nav class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        <span>Animalchain</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="practice.html">Üben</a>
+        <a href="online.html">Online</a>
+        <a href="local.html">Lokal</a>
+        <a href="account.html">Account</a>
+      </div>
+    </nav>
+
+    <main class="page-grid">
+      <section class="panel collapsible" data-collapsible="lobby">
+        <button type="button" class="collapsible-toggle" data-collapsible-toggle>
+          <span class="toggle-label">Einklappen</span>
+          <span class="toggle-arrow">▲</span>
+        </button>
+
+        <div class="panel-heading">
+          <p class="eyebrow">Online</p>
+          <h1>Lobby</h1>
+        </div>
+
+        <form id="onlineNameForm" class="stack-form">
+          <label for="onlineGuestName">Gastname</label>
+          <input id="onlineGuestName" maxlength="24" placeholder="Dein Name">
+          <button class="button secondary">Namen setzen</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <div class="panel-heading compact">
+          <p class="eyebrow">Erstellen</p>
+          <h2>Neue Lobby</h2>
+        </div>
+
+        <label class="toggle-line">
+          <span>
+            <strong>Timer aktivieren</strong>
+            <small>Spieler scheiden aus, wenn ihre Denkzeit abläuft.</small>
+          </span>
+          <input id="onlineTimerEnabled" type="checkbox">
+        </label>
+
+        <label class="select-label" for="onlineTurnSeconds">Denkzeit pro Zug</label>
+        <select id="onlineTurnSeconds">
+          <option value="120">120 Sekunden</option>
+          <option value="60" selected>60 Sekunden</option>
+          <option value="30">30 Sekunden</option>
+          <option value="10">10 Sekunden</option>
+        </select>
+
+        <button id="onlineCreateLobbyButton" class="button primary full" type="button">
+          Lobby erstellen
+        </button>
+
+        <div id="onlineLobbyTicket" class="ticket lobby-ticket" hidden>
+          <span class="ticket-label">Lobby-Code</span>
+          <strong id="onlineLobbyCode" class="lobby-code-big">----</strong>
+          <p class="lobby-share-hint">Teile diesen Code mit Freunden, damit sie beitreten können.</p>
+          <div class="lobby-ticket-actions">
+            <button id="onlineCopyCodeButton" class="button ghost" type="button">Code kopieren</button>
+            <button id="onlineShareLinkButton" class="button ghost" type="button">Link teilen</button>
+            <button id="onlineLeaveLobbyButton" class="button ghost" type="button">Lobby verlassen</button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="panel-heading compact">
+          <p class="eyebrow">Beitreten</p>
+          <h2>Code eingeben</h2>
+        </div>
+
+        <form id="onlineJoinForm" class="input-row">
+          <input id="onlineJoinCode" maxlength="8" placeholder="z. B. WOLF12" autocapitalize="characters" autocomplete="off">
+          <button class="button secondary">Beitreten</button>
+        </form>
+
+        <p id="onlineMessage" class="message">Bereit.</p>
+      </section>
+
+      <section class="panel wide">
+        <div class="panel-heading">
+          <p class="eyebrow">Spiel</p>
+          <h1>Online-Runde</h1>
+        </div>
+
+        <div class="status-grid">
+          <article class="stat">
+            <span>Letztes Tier</span>
+            <strong id="onlineLastAnimal">---</strong>
+          </article>
+
+          <article class="stat">
+            <span>Gesucht</span>
+            <strong id="onlineRequiredLetter">---</strong>
+          </article>
+
+          <article class="stat">
+            <span>Timer</span>
+            <strong id="onlineTimerDisplay">Aus</strong>
+          </article>
+        </div>
+
+        <p id="onlineTurnBadge" class="turn-badge">Keine aktive Lobby</p>
+
+        <form id="onlineMoveForm" class="input-row">
+          <input id="onlineAnimalInput" autocomplete="off" placeholder="Tier eingeben">
+          <button class="button primary">Spielen</button>
+        </form>
+
+        <div class="actions-row">
+          <button id="onlineStartGameButton" class="button primary" type="button" hidden>Spiel starten</button>
+          <button id="onlineRefreshButton" class="button ghost" type="button">Aktualisieren</button>
+          <button id="onlineNewRoundButton" class="button secondary" type="button">Neue Runde</button>
+        </div>
+
+        <div class="two-columns">
+          <div>
+            <h3>Spieler</h3>
+            <div id="onlinePlayersList" class="players-list"></div>
+          </div>
+
+          <div>
+            <h3>Verlauf</h3>
+            <ol id="onlineMovesList" class="moves-list"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel collapsible is-collapsed" data-collapsible="lobby">
+        <button type="button" class="collapsible-toggle" data-collapsible-toggle>
+          <span class="toggle-label">Ausklappen</span>
+          <span class="toggle-arrow">▲</span>
+        </button>
+
+        <div class="panel-heading">
+          <p class="eyebrow">Lokal</p>
+          <h2>Tier hinzufügen</h2>
+        </div>
+
+        <p class="hint">
+          Dieses Tier wird nur in deinem Browser gespeichert, nicht in Supabase.
+        </p>
+
+        <form id="onlineLocalAnimalForm" class="stack-form">
+          <label for="onlineLocalAnimalInput">Neues Tier</label>
+          <input id="onlineLocalAnimalInput" autocomplete="off" placeholder="z. B. Erdhai">
+          <button class="button secondary">Lokal hinzufügen</button>
+        </form>
+
+        <p id="onlineLocalAnimalMessage" class="small-meta">Noch kein lokales Tier hinzugefügt.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html">Zurück</a>
+      <span>Online-Modus</span>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js?v=20260528-2"></script>
+</body>
+</html>

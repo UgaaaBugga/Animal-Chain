@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Animalchain · Account</title>
+</head>
+<body data-page="account">
+  <div class="shell">
+    <nav class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        <span>Animalchain</span>
+      </a>
+      <div class="nav-links">
+        <a href="practice.html">Üben</a>
+        <a href="online.html">Online</a>
+        <a href="local.html">Lokal</a>
+        <a href="account.html">Account</a>
+      </div>
+    </nav>
+
+    <main class="page-grid account-grid">
+      <section class="panel" id="accountAuthPanel">
+        <div class="panel-heading">
+          <p class="eyebrow">Account</p>
+          <h1>Anmelden oder Registrieren</h1>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="login" type="button">Anmelden</button>
+          <button class="tab" data-tab="register" type="button">Registrieren</button>
+        </div>
+
+        <form id="accountLoginForm" class="stack-form auth-form" data-form="login">
+          <label for="loginUsername">Benutzername</label>
+          <input id="loginUsername" autocomplete="username" maxlength="20" placeholder="dein_name" autocapitalize="none">
+
+          <label for="loginPin">PIN (4-6 Ziffern)</label>
+          <input id="loginPin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••">
+
+          <button class="button primary full" type="submit">Anmelden</button>
+        </form>
+
+        <form id="accountRegisterForm" class="stack-form auth-form" data-form="register" hidden>
+          <label for="regUsername">Benutzername (3-20 Zeichen, a-z, 0-9, _ oder -)</label>
+          <input id="regUsername" autocomplete="username" maxlength="20" placeholder="dein_name" autocapitalize="none">
+
+          <label for="regPin">PIN (4-6 Ziffern)</label>
+          <input id="regPin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••">
+
+          <label for="regPin2">PIN bestätigen</label>
+          <input id="regPin2" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••">
+
+          <label class="select-label">Avatar wählen</label>
+          <div id="regAvatarPicker" class="avatar-picker"></div>
+
+          <button class="button primary full" type="submit">Account erstellen</button>
+        </form>
+
+        <p id="accountMessage" class="message">Bereit.</p>
+
+        <div class="divider"></div>
+        <p class="hint small-meta">
+          Account ist optional — du kannst auch ohne Anmeldung als Gast spielen.
+          Mit Account: dein Name + Avatar werden in jeder Lobby automatisch verwendet.
+        </p>
+      </section>
+
+      <section class="panel" id="accountProfilePanel" hidden>
+        <div class="panel-heading">
+          <p class="eyebrow">Dein Profil</p>
+          <h1 id="profileUsernameDisplay">---</h1>
+        </div>
+
+        <div class="profile-row">
+          <div class="profile-avatar-big" id="profileAvatarDisplay">🦊</div>
+          <div>
+            <h3>Avatar ändern</h3>
+            <div id="profileAvatarPicker" class="avatar-picker"></div>
+          </div>
+        </div>
+
+        <p id="profileMessage" class="message">Angemeldet.</p>
+
+        <div class="actions-row">
+          <button id="profileLogoutButton" class="button ghost" type="button">Abmelden</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html">Zurück</a>
+      <span>Account</span>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js?v=20260528-3"></script>
+</body>
+</html>
