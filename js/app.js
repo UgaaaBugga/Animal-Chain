@@ -1,4 +1,4 @@
-
+// js/app.js
 
 const isLocal = location.hostname === "127.0.0.1" || location.hostname === "localhost";
 
@@ -6,8 +6,8 @@ const ANIMALCHAIN_CONFIG = isLocal ? {
   supabaseUrl: "http://127.0.0.1:54321",
   supabaseKey: "sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH"
 } : {
-  supabaseUrl: "https://xbncxguszajafewaullp.supabase.co",
-  supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhibmN4Z3VzemFqYWZld2F1bGxwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc0OTMyMjIsImV4cCI6MjA5MzA2OTIyMn0.SmsP4udyYq9SSbVj-70_CyqlkPjyS2lzUM5jhFtRSPQ"
+  supabaseUrl: "https://qnitysbeohazzjloncxu.supabase.co",
+  supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuaXR5c2Jlb2hhenpqbG9uY3h1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyNDQ2NTIsImV4cCI6MjA5NjgyMDY1Mn0.dOWr7RiJ5cLLD9ZsJyPIBQ3bb4W-Vd5SUFqEt2Oegm0"
 };
 
 const LOCAL_ANIMALS_KEY = "animalchain_local_animals_v3_strict";
